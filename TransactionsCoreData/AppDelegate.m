@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "TCDConnectionManager.h"
 
 @interface AppDelegate ()
 
@@ -16,10 +17,26 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-  self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-  // Override point for customization after application launch.
-  self.window.backgroundColor = [UIColor whiteColor];
-  [self.window makeKeyAndVisible];
+//  self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+//  // Override point for customization after application launch.
+//  self.window.backgroundColor = [UIColor whiteColor];
+//  [self.window makeKeyAndVisible];
+  
+  // Connect to service and get json
+  [[[TCDConnectionManager alloc] init] getTransactionsFromService];
+  
+  [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:41/255.0f green:128/255.0f blue:185/255.0f alpha:1.0f]];
+  [UINavigationBar appearance].tintColor = [UIColor colorWithRed:224/255.0f green:195/255.0f blue:40.0f alpha:1.0f];
+  
+  [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary    dictionaryWithObjectsAndKeys:[UIColor colorWithRed:224/255.0f green:195/255.0f blue:40.0f alpha:1], NSForegroundColorAttributeName, nil]];
+  
+  [[UINavigationBar appearance] setTintColor:[UIColor colorWithRed:224/255.0f green:195/255.0f blue:40.0f alpha:1.0f]];
+  
+  [[UINavigationBar appearance] setTranslucent:NO];
+  
+
+  
+  
   return YES;
 }
 

@@ -13,6 +13,13 @@
 		FF4C974E1AD9983700CFDD08 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF4C974D1AD9983700CFDD08 /* Images.xcassets */; };
 		FF4C97511AD9983700CFDD08 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF4C974F1AD9983700CFDD08 /* LaunchScreen.xib */; };
 		FF4C975D1AD9983800CFDD08 /* TransactionsCoreDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF4C975C1AD9983800CFDD08 /* TransactionsCoreDataTests.m */; };
+		FF4C97691AD99AC900CFDD08 /* TCDConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FF4C97681AD99AC900CFDD08 /* TCDConnectionManager.m */; };
+		FF4C976D1AD99D7500CFDD08 /* Transaction.m in Sources */ = {isa = PBXBuildFile; fileRef = FF4C976C1AD99D7500CFDD08 /* Transaction.m */; };
+		FF4C97701AD99DBB00CFDD08 /* Transaction+ToCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = FF4C976F1AD99DBB00CFDD08 /* Transaction+ToCoreData.m */; };
+		FF4C97751AD99F3400CFDD08 /* CoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF4C97741AD99F3400CFDD08 /* CoreDataTableViewController.m */; };
+		FF4C97791AD9A02E00CFDD08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF4C97781AD9A02E00CFDD08 /* Main.storyboard */; };
+		FF4C977D1AD9A07000CFDD08 /* TCDTransactionsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF4C977C1AD9A07000CFDD08 /* TCDTransactionsTableViewController.m */; };
+		FF4C97801AD9A09700CFDD08 /* TCDDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF4C977F1AD9A09700CFDD08 /* TCDDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +44,19 @@
 		FF4C97561AD9983800CFDD08 /* TransactionsCoreDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransactionsCoreDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF4C975B1AD9983800CFDD08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF4C975C1AD9983800CFDD08 /* TransactionsCoreDataTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransactionsCoreDataTests.m; sourceTree = "<group>"; };
+		FF4C97671AD99AC900CFDD08 /* TCDConnectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCDConnectionManager.h; sourceTree = "<group>"; };
+		FF4C97681AD99AC900CFDD08 /* TCDConnectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCDConnectionManager.m; sourceTree = "<group>"; };
+		FF4C976B1AD99D7500CFDD08 /* Transaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Transaction.h; sourceTree = "<group>"; };
+		FF4C976C1AD99D7500CFDD08 /* Transaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Transaction.m; sourceTree = "<group>"; };
+		FF4C976E1AD99DBB00CFDD08 /* Transaction+ToCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Transaction+ToCoreData.h"; sourceTree = "<group>"; };
+		FF4C976F1AD99DBB00CFDD08 /* Transaction+ToCoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Transaction+ToCoreData.m"; sourceTree = "<group>"; };
+		FF4C97731AD99F3400CFDD08 /* CoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataTableViewController.h; sourceTree = "<group>"; };
+		FF4C97741AD99F3400CFDD08 /* CoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataTableViewController.m; sourceTree = "<group>"; };
+		FF4C97781AD9A02E00CFDD08 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		FF4C977B1AD9A07000CFDD08 /* TCDTransactionsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCDTransactionsTableViewController.h; sourceTree = "<group>"; };
+		FF4C977C1AD9A07000CFDD08 /* TCDTransactionsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCDTransactionsTableViewController.m; sourceTree = "<group>"; };
+		FF4C977E1AD9A09700CFDD08 /* TCDDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCDDetailViewController.h; sourceTree = "<group>"; };
+		FF4C977F1AD9A09700CFDD08 /* TCDDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCDDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				FF4C97421AD9983700CFDD08 /* TransactionsCoreData */,
+				FF4C97431AD9983700CFDD08 /* Supporting Files */,
 				FF4C97591AD9983800CFDD08 /* TransactionsCoreDataTests */,
 				FF4C97411AD9983700CFDD08 /* Products */,
 			);
@@ -78,12 +99,14 @@
 		FF4C97421AD9983700CFDD08 /* TransactionsCoreData */ = {
 			isa = PBXGroup;
 			children = (
+				FF4C977A1AD9A03800CFDD08 /* Controllers */,
+				FF4C97721AD99F2200CFDD08 /* CoreDataTableViewController */,
+				FF4C976A1AD99B0300CFDD08 /* Model */,
+				FF4C97661AD99A8600CFDD08 /* Comunications */,
+				FF4C97711AD99DC100CFDD08 /* Categories */,
 				FF4C97471AD9983700CFDD08 /* AppDelegate.h */,
 				FF4C97481AD9983700CFDD08 /* AppDelegate.m */,
-				FF4C974D1AD9983700CFDD08 /* Images.xcassets */,
-				FF4C974F1AD9983700CFDD08 /* LaunchScreen.xib */,
-				FF4C974A1AD9983700CFDD08 /* TransactionsCoreData.xcdatamodeld */,
-				FF4C97431AD9983700CFDD08 /* Supporting Files */,
+				FF4C97781AD9A02E00CFDD08 /* Main.storyboard */,
 			);
 			path = TransactionsCoreData;
 			sourceTree = "<group>";
@@ -91,10 +114,13 @@
 		FF4C97431AD9983700CFDD08 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FF4C974D1AD9983700CFDD08 /* Images.xcassets */,
+				FF4C974F1AD9983700CFDD08 /* LaunchScreen.xib */,
 				FF4C97441AD9983700CFDD08 /* Info.plist */,
 				FF4C97451AD9983700CFDD08 /* main.m */,
 			);
 			name = "Supporting Files";
+			path = TransactionsCoreData;
 			sourceTree = "<group>";
 		};
 		FF4C97591AD9983800CFDD08 /* TransactionsCoreDataTests */ = {
@@ -112,6 +138,54 @@
 				FF4C975B1AD9983800CFDD08 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FF4C97661AD99A8600CFDD08 /* Comunications */ = {
+			isa = PBXGroup;
+			children = (
+				FF4C97671AD99AC900CFDD08 /* TCDConnectionManager.h */,
+				FF4C97681AD99AC900CFDD08 /* TCDConnectionManager.m */,
+			);
+			name = Comunications;
+			sourceTree = "<group>";
+		};
+		FF4C976A1AD99B0300CFDD08 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FF4C974A1AD9983700CFDD08 /* TransactionsCoreData.xcdatamodeld */,
+				FF4C976B1AD99D7500CFDD08 /* Transaction.h */,
+				FF4C976C1AD99D7500CFDD08 /* Transaction.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		FF4C97711AD99DC100CFDD08 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				FF4C976E1AD99DBB00CFDD08 /* Transaction+ToCoreData.h */,
+				FF4C976F1AD99DBB00CFDD08 /* Transaction+ToCoreData.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		FF4C97721AD99F2200CFDD08 /* CoreDataTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FF4C97731AD99F3400CFDD08 /* CoreDataTableViewController.h */,
+				FF4C97741AD99F3400CFDD08 /* CoreDataTableViewController.m */,
+			);
+			name = CoreDataTableViewController;
+			sourceTree = "<group>";
+		};
+		FF4C977A1AD9A03800CFDD08 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FF4C977B1AD9A07000CFDD08 /* TCDTransactionsTableViewController.h */,
+				FF4C977C1AD9A07000CFDD08 /* TCDTransactionsTableViewController.m */,
+				FF4C977E1AD9A09700CFDD08 /* TCDDetailViewController.h */,
+				FF4C977F1AD9A09700CFDD08 /* TCDDetailViewController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +268,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF4C97791AD9A02E00CFDD08 /* Main.storyboard in Resources */,
 				FF4C97511AD9983700CFDD08 /* LaunchScreen.xib in Resources */,
 				FF4C974E1AD9983700CFDD08 /* Images.xcassets in Resources */,
 			);
@@ -213,9 +288,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF4C97701AD99DBB00CFDD08 /* Transaction+ToCoreData.m in Sources */,
 				FF4C97491AD9983700CFDD08 /* AppDelegate.m in Sources */,
+				FF4C977D1AD9A07000CFDD08 /* TCDTransactionsTableViewController.m in Sources */,
+				FF4C97751AD99F3400CFDD08 /* CoreDataTableViewController.m in Sources */,
 				FF4C97461AD9983700CFDD08 /* main.m in Sources */,
 				FF4C974C1AD9983700CFDD08 /* TransactionsCoreData.xcdatamodeld in Sources */,
+				FF4C976D1AD99D7500CFDD08 /* Transaction.m in Sources */,
+				FF4C97691AD99AC900CFDD08 /* TCDConnectionManager.m in Sources */,
+				FF4C97801AD9A09700CFDD08 /* TCDDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
